@@ -1,4 +1,23 @@
-
+const productos = [
+    {
+        id: 1,
+        nombre: "Control",
+        precio: 100,
+        emoji: "🎮"
+    },
+    {
+        id: 2,
+        nombre: "Mortal Kombat",
+        precio: 70,
+        emoji: "🥷"
+    },
+    {
+        id: 3,
+        nombre: "Mario Pixel",
+        precio: 20,
+        emoji: "🍄"
+    }
+];
 
 [
   {
