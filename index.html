@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Home</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <p class="header__logo">Tu sitio de compras de videojuegos </p>
+
+    <nav class="header__nav">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li>
+          <a href="./carrito.html" class="carrito-icono">
+            🛒 <span id="contador-carrito">0</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav-list">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Servicios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="titulo-home">Bienvenidos a la tienda de Sergio</h1>
+
+    <section class="productos-home">
+      <h2>Algunos de nuestros productos</h2>
+
+      <div id="contenedor-tarjetas" class="contenedor-tarjetas">
+
+        <!-- Producto 1 -->
+        <article class="tarjeta-producto">
+          <img src="../img/Logocontrol.png" alt="imagen de Logocontrol" width="50" height="350">
+          <p>Precio: $100</p>
+          <button class="btn">Agregar al carrito</button>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="tarjeta-producto">
+          <h3>logoMKombat</h3>
+          <img src="../img/logomortalKombat.jpg" alt="imagen de logomortalKombat" width="50" height="350">
+          <p>Precio: $70</p>
+          <button class="btn">Agregar al carrito</button>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="tarjeta-producto">
+          <h3>Mario Pixel</h3>
+          <img src="../img/logoVideojuego.png" alt="imagen logoVideojuego" width="100" height="350">
+          <p>Precio: $20</p>
+          <button onclick="agregarproducto">
+            Agregar al carrito
+          </button>
+        </article>
+        <a href="#" id="vaciar-carrito" class="button u-full-width">VaciarCarrito</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>nuestras redes sociales : </p>
+
+    <nav>
+      <ul>
+        <li>Instagram <img src="../img/instragramlogo.png.jpg" alt="" width="50" height="50"></li>
+      </ul>
+      <ul>
+        <li>Tiktok <img src="../img/tiktoklogo.png.png" alt="" width="50" height="50"></li>
+      </ul>
+      <ul>
+        <li>X <img src="../img/twitterlogo.png.png" alt="" width="50" height="50"></li>
+      </ul>
+    </nav>
+  </footer>
+<button></button>
+  <script src="./carrito.js"></script>
+</body>
+</html>
+
+
+  
