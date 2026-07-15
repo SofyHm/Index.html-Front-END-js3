@@ -69,6 +69,10 @@ function agregarProducto(id) {
     guardarCarrito();
 
     mostrarMensaje("Producto agregado al carrito");
+            localStorage.setItem(
+    "carrito",
+    JSON.stringify(carrito)
+);
 
     renderizarCarrito();
 
@@ -95,6 +99,10 @@ function cambiarCantidad(id, cambio) {
     }
 
     guardarCarrito();
+            localStorage.setItem(
+    "carrito",
+    JSON.stringify(carrito)
+);
 
     renderizarCarrito();
 
@@ -125,6 +133,10 @@ function vaciarCarrito() {
     carrito = [];
 
     guardarCarrito();
+            localStorage.removeItem(
+    "carrito",
+    JSON.stringify(carrito)
+);
 
     renderizarCarrito();
 
@@ -255,11 +267,10 @@ function renderizarCarrito() {
             </button>
 
             <hr>
-        `;
 
         listaCarrito.appendChild(div);
 
-    });
+    }
 
     actualizarTotales();
 
