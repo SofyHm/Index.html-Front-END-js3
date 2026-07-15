@@ -1,28 +1,27 @@
+const productos = [
 
-
-[
   {
     "id": 1,
     "nombre": "logovideojuego",
     "precio": 30,
     "img": "logovideojuego.jpg.png"
-  }
+  },
 
-  ,{
+  {
     "id": 2,
     "nombre": "logoMortalKombat",
     "precio": 30,
     "img": "img/logoMortalKombat.jpg.png"
-  }
+  },
 
-  ,{
+  {
     "id": 3,
     "nombre": "logo control",
     "precio": 30,
     "img": "img/logocontrol.jpg"
   }
   
-]
+];
 
         /*=====================================================
                 VARIABLES
