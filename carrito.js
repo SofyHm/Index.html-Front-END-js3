@@ -109,6 +109,21 @@ function agregarProducto(id) {
 
 function renderizarCarrito() {
 
+    const contador =
+        document.getElementById("contador-carrito");
+
+    if (!contador) return;
+
+    const cantidad =
+        carrito.reduce(
+            (total, producto) => total + producto.cantidad,
+            0
+        );
+
+    contador.textContent = cantidad;
+
+}
+
     listaCarrito.innerHTML = "";
 
     if (carrito.length === 0) {
@@ -179,6 +194,8 @@ function renderizarCarrito() {
     });
 
     actualizarTotales();
+
+actualizarContador();
 
 }
 
@@ -382,4 +399,7 @@ arriba.addEventListener("click",()=>{
     });
 
 });
+
+renderizarCarrito();
+actualizarContador();
    
